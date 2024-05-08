@@ -9,4 +9,9 @@ data[42]
 secretValue = random.choice(data)
 secretWord = secretValue['palavra']
 tip = secretValue['dica']
-print(f'A palavra secreta tem{len(secretWord)} -> {tip}')
+res = input(f'A palavra secreta tem{len(secretWord)} -> {tip}')
+
+if res == secretWord:
+    print('Acertou')
+else:
+    print(f'Errou.. a palavra secreta era {secretWord}')
